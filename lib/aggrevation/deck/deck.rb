@@ -10,7 +10,9 @@ module Aggrevation
     end
 
     def cards
-      suits.map {|suit| values.map {|value| Card.new(value, suit) } }.flatten()
+      suits.map {|suit| values.map {|value| Card.new(value, suit) } }
+      .flatten()
+      .shuffle
     end
   end
 end
