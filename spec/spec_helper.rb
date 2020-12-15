@@ -2,6 +2,9 @@
 
 require "aggrevation"
 require "aggrevation/deck/deck"
+require "aggrevation/card/card"
+require "aggrevation/player/player"
+
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
